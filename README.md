@@ -10,15 +10,14 @@ Single cell RNA sequencing has become an important method to identify cell types
 
 ## Content
 
-The python script automatic_samtools_pysam.py needs to be run from a directory that contains:
+The python script extract_cb_and_subsample.py needs to be run from a directory that contains:
  1. the metadata_file in tsv format (metadata.tsv)
  2. the cell_barcode_directory with the list of valid cell barcodes per sample
  3. the bam_files_directory containing the bam files to subsample.
 It requires python3 and the packages pandas and pysam.
 
-In order to run it please type: __python3 automatic_samtools_pysam.py__ in the right directory.
+In order to run it please type: __python3 extract_cb_and_subsample.py__ in the right directory.
 
 It first extracts the cell_barcodes in the cell barcode list from the bam files, then subsamples them to the value listed in the metadata_file and then further subsamples it to 75%, 50% and 25% of that value.
 
 If you have any question please contact Erica Valentini e.valentini@dkfz.de
-

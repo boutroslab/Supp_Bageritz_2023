@@ -1,7 +1,7 @@
 # This script needs to be run from a directory that contains the metadata_file,
 # the cell_barcode_directory and the bam_files_directory.
 # It needs python3 and the packages pandas and pysam to be installed.
-# In order to run it please type: python3 automatic_samtools_pysam.py
+# In order to run it please type: python3 extract_cb_and_subsample.py
 # It first extracts the cell_barcodes in the cell barcode list from the bam files,
 # then subsample them to the value listed in the metadata_file and then further
 # subsamples it to 75%, 50% and 25% of that value.
